@@ -4,6 +4,8 @@ const Product_Context = createContext();
 
 const ProductProvider = ({ children }) => {
     const [data, setData] = useState([]);
+
+
     useEffect(() => {
         fetch('products.json')
             .then(res => res.json())
