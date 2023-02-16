@@ -29,6 +29,11 @@ const ProductCard = ({ product }) => {
         >
           Add to cart
         </button>
+        {/* <button className='bg-indigo-500 rounded-full py-1 px-2 flex-1 text-white text-bold'
+          onClick={() => dispatch({ type: actionTypes.REMOVE_CART, payload: product })}
+        >
+          Remove Cart
+        </button> */}
         <button
           title='Add to wishlist'
           className='bg-indigo-500  py-1 px-2 rounded-full'

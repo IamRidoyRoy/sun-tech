@@ -6,6 +6,7 @@ export const initialState = {
     products: [],
     error: false,
     cart: [],
+    remove_cart: [],
     wishlist: []
 
 }
@@ -43,6 +44,11 @@ export const productReducer = (state, action) => {
             return {
                 ...state,
                 wishlist: [...state.wishlist, action.payload]
+            }
+        case actionTypes.REMOVE_CART:
+            return {
+                ...state,
+                remove_cart: [...state.remove_cart, action.payload]
             }
 
         default:
