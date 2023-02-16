@@ -3,7 +3,6 @@ import ProductCard from "../components/ProductCard";
 
 const Home = () => {
 
-
   const { state: { products, loading, error } } = useProducts();
   let content;
 

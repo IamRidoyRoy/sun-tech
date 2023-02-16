@@ -22,10 +22,15 @@ const Cart = () => {
     content = cart.map((product) => <ProductCard key={product._id} product={product}></ProductCard>)
   }
   return (
-    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-7xl gap-14 mx-auto my-10'>
-      <h1>All Cart Product</h1>
-      {content}
+
+    <div>
+      <h1 className="flex justify-center text-2xl">All Cart Product</h1>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-7xl gap-14 mx-auto my-10'>
+        {content}
+      </div>
+
     </div>
+
   );
 };
 
