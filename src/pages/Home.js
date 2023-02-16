@@ -5,7 +5,6 @@ const Home = () => {
 
 
   const { state: { products, loading, error } } = useProducts();
-
   let content;
 
   if (loading) {
